@@ -1,0 +1,5 @@
+sicaklik=input('Sıcaklığı Derece Cinsinden Giriniz ')
+yogunluk = (-3*(10^-6)*(sicaklik^3)) + (2*(10^-4)*(sicaklik^3)) - (-1.06*(10^-2)*(sicaklik^2)) + (0.076*sicaklik) + 999.82
+ozgulisi = -3.7559 + (6.7953*(10^-2)*(sicaklik+273)) - (1.9149*(10^-4)*((sicaklik+273)^2)) + (1.7850*(10^-7)*((sicaklik+273)^3))
+isililetim = -0.63262 + (7.1959*(10^-3)*(sicaklik+273)) - (1.1440*(10^-5)*((sicaklik+273)^2)) + (4.2365*(10^-9)*((sicaklik+273)^3))
+fprintf([num2str(sicaklik) ' (C)deki Isıl Özellikler\n' 'Yoğunluk: ' num2str(yogunluk) '(kg/m3)\n' 'Özgül Isı: ' num2str(ozgulisi) '(kj/kgK) \n' 'Isıl İletim: ' num2str(isililetim) '(W/mK)\n'])

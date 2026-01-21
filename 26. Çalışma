@@ -1,0 +1,12 @@
+t = 0:20:1000;
+T1 = 100 * (1 - exp(-0.001 * t));
+T2 = 100 * (1 - exp(-0.0025 * t));
+T3 = 100 * (1 - exp(-0.005 * t));
+T4 = 100 * (1 - exp(-0.01 * t));
+T5 = 100 * (1 - exp(-0.05 * t));
+plot(t,T1,'-or', t,T2,'-^b', t,T3,'-ks', t,T4,'-dm', t,T5,'-xg', 'LineWidth', 1.5)
+title('Sicaklik Degisimi')
+xlabel('Zaman (s)');
+ylabel('Sicaklik (C)');
+grid on; % Arkadaki kareli ızgarayı açar
+legend('0.001', '0.0025', '0.005', '0.01', '0.05', 'Location', 'Southeast')

@@ -1,0 +1,10 @@
+x = -pi:0.01:pi
+y1 = sinh(x)
+y2 = cosh(x)
+y3 = tanh(x)
+plot(x,y1,'r', x,y2,'b--', x,y3,'m-.', 'LineWidth', 2)
+title('Hiperbolik Fonksiyonlar')
+xlabel('x - ekseni');
+ylabel('y - ekseni');
+ylim([-10 10])
+legend('sinh(x)', 'cosh(x)', 'tanh(x)')

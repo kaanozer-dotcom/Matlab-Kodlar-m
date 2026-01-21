@@ -1,0 +1,11 @@
+clc; clear;
+dosya = fopen('hareket1.txt', 'w');
+fprintf(dosya, 't\t v\t a\r\n');
+fprintf(dosya, '-------------------\r\n');
+for t = 0 : 5 : 100
+    v = 12 * t^2 - 30 * t + 36;
+    a = 24 * t - 30;
+    fprintf(dosya, '%d\t %d\t %d\r\n', t, v, a);
+end
+fclose(dosya);
+disp('İşlem tamamlandı. hareket1.txt dosyası oluşturuldu.');

@@ -1,0 +1,18 @@
+function ebob = IkiSayininEbobunuBul(x, y)
+    % Varsayılan olarak ebob 1'dir.
+    ebob = 1; 
+    
+    % 1'den başlayıp x sayısına kadar sırayla deneriz.
+    % (Küçük sayıyı bulmakla uğraşmadık, kod kısaldı)
+    for i = 1:x
+        % Eğer i sayısı, HEM x'i HEM y'yi tam bölüyorsa
+        if (rem(x, i) == 0) && (rem(y, i) == 0)
+            ebob = i; % Hafızadaki ebob değerini güncelle
+        end
+    end
+end
+
+clc
+x=input('1. Sayıyı Giriniz')
+y=input('2. Sayıyı Giriniz')
+ebob=IkiSayininEbobunuBul (x,y)

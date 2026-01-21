@@ -1,0 +1,16 @@
+clc
+n=input('Cismi Belirtiniz, Silindir için 1, Küp için 2, Küre için 3ü tuşlayınız ')
+if n==1
+    yaricap=input('Silindirin Yarıçapını Giriniz ')
+    yukseklik=input('Silindirin Yüksekliğini Giriniz ')
+    alan= (pi*(yaricap^2))*yukseklik
+    fprintf(['Yarıçapı ' num2str(yaricap) ' Yüksekliği ' num2str(yukseklik) ' Olan Silindirin Alanı ' num2str(alan) ' dır'])
+elseif n==2
+kenar=input('Küpün Bir Kenarını Giriniz ')
+alan = kenar^3
+fprintf(['Kenar Uzunluğu ' num2str(kenar) ' olan küpün alanı ' num2str(alan) 'dır'])
+elseif n==3
+    yaricap=input('Kürenin Yarıçapını Giriniz ')
+    alan = (pi*(yaricap^2))
+    fprintf(['Yarıçapı ' num2str(yaricap) ' olan kürenin alanı ' num2str(alan) ' dır '])
+end

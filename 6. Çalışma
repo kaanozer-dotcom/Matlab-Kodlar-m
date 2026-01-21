@@ -1,0 +1,22 @@
+clc
+vize1 = input('1. Vize Notunuzu Giriniz ')
+vize2 = input('2. Vize Notunuzu Giriniz ')
+final = input('Final Notunuzu Giriniz ')
+yilsonu = (0.25*(vize1)) + (0.25*(vize2)) + (0.5*(final))
+if yilsonu>=90
+    msgbox('Yıl sonu harf notunuz: AA Mükemmel')
+elseif yilsonu>=85 && yilsonu<90
+    msgbox('Yıl sonu harf notunuz: BA Pekiyi')
+elseif yilsonu>=80 && yilsonu<85
+    msgbox('Yıl sonu harf notunuz: BB İyi')
+elseif yilsonu>=75 && yilsonu<80
+    msgbox('Yıl sonu harf notunuz: CB Yeterli')
+elseif yilsonu>=65 && yilsonu<75
+    msgbox('Yıl sonu harf notunuz: CC Geçer')
+elseif yilsonu>=58 && yilsonu<65
+    msgbox('Yıl sonu harf notunuz: DC Koşullu Başarılı/Başarısız')
+elseif yilsonu>=50 && yilsonu<58
+    msgbox('Yıl sonu harf notunuz: DD Koşullu Başarılı/Başarısız')
+else
+    msgbox('Yıl sonu harf notunuz: FF Başarısız')
+end

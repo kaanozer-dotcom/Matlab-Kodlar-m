@@ -1,0 +1,8 @@
+clc
+ad=input('Adınızı Giriniz ','s')
+soyad=input('Soyadınızı Giriniz ','s')
+vize1=input('1. Vize Notunuzu Giriniz')
+vize2=input('2. Vize Notunuzu Giriniz')
+final=input('Final Notunuzu Giriniz')
+not = (0.25*vize1)+(0.25*vize2)+(0.5*final)
+disp([ ad ' ' soyad ' yılsonu notun ' num2str(not)])

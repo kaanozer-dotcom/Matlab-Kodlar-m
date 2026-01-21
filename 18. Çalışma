@@ -1,0 +1,12 @@
+clc
+n=15;
+for i = 1:n
+   for j = 1:n
+    if (i<=j && i+j<=16) || (i>=j && i+j>=16)
+        fprintf('*')
+    else
+        fprintf(' ')
+    end
+end
+fprintf('\n')
+end

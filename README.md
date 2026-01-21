@@ -1,1 +1,6 @@
-Burada yer alan kodlar üniversitede bölüm derslerimden olan programlamaya giriş dersine çalışırken yazdığım matlab dilindeki kodlardır. Baştan sona döngüler, diziler, fonksiyonlar, dosya işleme, asterikslerle şekil çizme, grafikler gibi konular yer almaktadır.
+```text
+Burada yer alan kodlar üniversitede bölüm derslerimden olan programlamaya giriş
+dersine çalışırken yazdığım matlab dilindeki kodlardır. Baştan sona döngüler,
+diziler, fonksiyonlar, dosya işleme, asterikslerle şekil çizme, grafikler gibi
+konular yer almaktadır.
+```

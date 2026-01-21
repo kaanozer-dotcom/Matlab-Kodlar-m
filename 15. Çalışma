@@ -1,0 +1,27 @@
+function ort = OrtalamaHesapla(dizi)
+    toplam = sum(dizi);
+    n = length(dizi);
+    ort = toplam / n;
+end
+
+function s = StandartSapma(dizi)
+    n = length(dizi);
+    ort = mean(dizi);
+    
+    toplam_fark_kare = 0;
+    
+    for j = 1:n
+        fark = dizi(j) - ort;
+        kare = fark^2;
+        toplam_fark_kare = toplam_fark_kare + kare;
+    end
+    s = sqrt((1 / (n - 1)) * toplam_fark_kare);
+end
+
+clc; clear;
+for i = 1:10
+    not1 = sprintf('%d. ogrenciyi giriniz: ', i);
+    a(i) = input(not1);
+end
+ortalama = OrtalamaHesapla(a)
+ss = StandartSapma(a)

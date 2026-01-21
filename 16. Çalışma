@@ -1,0 +1,10 @@
+function sonuc = MatrisTopla(A, B)
+    [cite_start]
+    [satir_A, sutun_A] = size(A);
+    [satir_B, sutun_B] = size(B);
+    if (satir_A == satir_B) && (sutun_A == sutun_B)
+        sonuc = A + B;  % Eşitse topla
+    else
+        sonuc = [];     [cite_start]% Değilse sorudaki kurala göre boş yap [cite: 408]
+    end
+end

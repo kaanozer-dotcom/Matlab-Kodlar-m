@@ -1,0 +1,10 @@
+x = 0:0.1:10;
+y0 = x*0;
+y1 = exp(-0.25*x) .* cos(2*x - 1.75);
+y2 = exp(-0.50*x) .* cos(4*x - 1.75);
+y3 = exp(-0.75*x) .* cos(6*x - 1.75);
+plot(x,y0,'k:', x,y1,'ro', x,y2,'--b^', x,y3,'-.ms')
+title('Sonum Fonksiyonu Grafigi')
+xlabel('x-ekseni')
+ylabel('y-ekseni')
+legend('y=0 dogrusu', 'a=0.25&b=2', 'a=0.5&b=4', 'a=0.75&b=6')

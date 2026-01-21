@@ -1,0 +1,16 @@
+x = -pi:0.1:pi
+y1 = sin(x);
+y2 = cos(x);
+y3 = tan(x);
+
+subplot(2,2,1:2)
+plot(x,y1, '-or')
+title('Sine Function: sin(x)')
+
+subplot(2,2,3)
+plot(x,y2, '-xb')
+title('Cosine Function cos(x)')
+
+subplot(2,2,4)
+plot(x,y3, 'dm')
+title('Tangent Function: tan(x)')

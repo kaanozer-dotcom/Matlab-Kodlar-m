@@ -1,0 +1,21 @@
+function AsalCiftleriBul(A, B)
+    for i = A : B
+        for j = (i + 1) : B
+            aralarindaAsal = 1; % Varsayım: Evet asaldır (1)
+            for k = 2:i
+                if (rem(i, k) == 0) && (rem(j, k) == 0)
+                    aralarindaAsal = 0;
+                    break;
+                end
+            end
+            if aralarindaAsal == 1
+                fprintf(['Aralarında Asal Sayı Çifti: (' num2str(i) ',' num2str(j) ')\n']);
+            end
+        end
+    end
+end
+
+clc; clear;
+x = input('1. Sayıyı Giriniz: ');
+y = input('2. Sayıyı Giriniz: ');
+AsalCiftleriBul(x, y);

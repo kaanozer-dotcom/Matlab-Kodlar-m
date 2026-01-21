@@ -1,0 +1,7 @@
+clc
+ad=input('Adınızı Giriniz','s')
+soyad=input('Soyadınızı Giriniz','s')
+dogum=input('Doğum Yılınızı Giriniz')
+yas= 2025-dogum
+disp(['Adınız: ' ad ' Soyadınız: ' soyad ' olarak tanımlandı'])
+disp(['Sayın ' soyad ',' ' ' num2str(yas) ' yasindasiniz'])

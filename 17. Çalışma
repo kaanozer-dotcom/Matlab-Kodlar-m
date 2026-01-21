@@ -1,0 +1,9 @@
+function sonuc = MatrisCarpimi(A, B)
+    [satir_A, sutun_A] = size(A);
+    [satir_B, sutun_B] = size(B);
+    if sutun_A == satir_B
+        sonuc = A * B;
+    else
+        sonuc = [];
+    end
+end

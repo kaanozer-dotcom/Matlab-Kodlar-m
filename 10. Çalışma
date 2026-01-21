@@ -1,0 +1,22 @@
+function ekob = EnKucukOrtakBolen(x, y)
+    % Varsayılan sonuç 1'dir (Hiçbir şey bulamazsa bunu döndürür)
+    ekob = 1;
+    
+    % Hangi sayı küçük diye bakmıyoruz. Rastgele x'i sınır seçtik.
+    % 2'den başlayıp x'e kadar sayıyoruz.
+    for i = 2:x
+        
+        % i sayısı ikisini de bölüyor mu?
+        if (rem(x, i) == 0) && (rem(y, i) == 0)
+            ekob = i;   % Cevabı kaydet
+            return;     % BULDUĞUN AN DUR VE ÇIK! (En önemlisi burası)
+        end
+        
+    end
+end
+
+clc; clear;
+s1 = input('1. Sayıyı Giriniz: ');
+s2 = input('2. Sayıyı Giriniz: ');
+sonuc = EnKucukOrtakBolen(s1, s2);
+fprintf(['En küçük ortak bölen: ' num2str(sonuc) '' ]);

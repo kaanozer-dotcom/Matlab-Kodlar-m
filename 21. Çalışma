@@ -1,0 +1,8 @@
+x = -2*pi:0.1:2*pi;
+y1 = sin(x);
+y2 = cos(x);
+plot(x,y1,'-ro', x, y2, '--b^' )
+title('sin(x) & cos(x) grafigi');
+xlabel('x - ekseni');
+ylabel('y - ekseni');
+legend('sin(x)', 'cos(x)')

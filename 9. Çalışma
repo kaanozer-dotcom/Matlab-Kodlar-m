@@ -1,0 +1,15 @@
+function liste = TumOrtakBolenleriBul(x, y)
+    liste = []; 
+    for i = 1:x
+        if (rem(x, i) == 0) && (rem(y, i) == 0)
+            liste = [liste, i]; 
+        end
+    end
+end
+
+clc; clear;
+
+s1 = input('1. Sayıyı Giriniz: ');
+s2 = input('2. Sayıyı Giriniz: ');
+liste = TumOrtakBolenleriBul(s1, s2);
+fprintf(['Ortak Bölenler: ' num2str(liste) '\n']);

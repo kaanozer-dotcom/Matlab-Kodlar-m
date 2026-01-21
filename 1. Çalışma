@@ -1,0 +1,4 @@
+clc
+normalsicaklik = input('Hava Sıcaklığını Giriniz ')
+ruzgarhizi = input('Rüzgar Hızını Giriniz ')
+hissedilensicaklik = (33-(33-normalsicaklik))*((0.475-(0.0126*ruzgarhizi))+(0.24*sqrt(ruzgarhizi)))
